@@ -35,7 +35,7 @@ function tabuada(){
             }else {
                 itemDivisao.text = `${n} / ${c} = ${(n / c)}`
             }
-            tabuada.appendChild(itemDivisao)
+            tabDivisao.appendChild(itemDivisao)
 
 
         }
