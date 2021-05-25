@@ -27,8 +27,16 @@ function tabuada(){
             tabMultiplicacao.appendChild(itemMultiplicacao)
             //tabuada de divisão
             let itemDivisao = document.createElement("option")
-            itemDivisao.text = `${n} / ${c} = ${n / c}`
-            tabDivisao.appendChild(itemDivisao)
+            let resultadoDivisao = (n/c)
+        
+            if (resultadoDivisao.toString().length > 4){
+              
+                itemDivisao.text = `${n} / ${c} = ${(n / c).toFixed(2)}`
+            }else {
+                itemDivisao.text = `${n} / ${c} = ${(n / c)}`
+            }
+            tabuada.appendChild(itemDivisao)
+
 
         }
 
